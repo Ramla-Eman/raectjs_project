@@ -1,0 +1,43 @@
+/* google font family poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+/* theme */
+@theme{
+  --font-family: "Poppins", sans-serif;
+
+  --color-white: #eee;
+  --color-dark: #333;
+  --color-orange: #ff7722;
+
+  --background: var(--color-white);
+  --foreground: var(--color-dark);
+}
+
+/* Dark Mode Color Scheme */
+[data-theme="dark"] {
+  --font-family: "Poppins", sans-serif;
+
+  --color-white: #eee;
+  --color-dark: #333;
+  --color-orange: #ff7722;
+
+  --background: var(--color-dark);
+  --foreground: var(--color-white);
+}
+
+/* ball */
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: all 0.2s linear;
+}
+
+.move {
+  transform: translateX(22px);
+}

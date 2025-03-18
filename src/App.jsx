@@ -20,7 +20,7 @@ const App = () => {
     }
   }, [theme]);
   return (
-    <div>
+    <div className="font-family">
       <Header
         myTheme={theme}
         onToggleTheme={toggleTheme}

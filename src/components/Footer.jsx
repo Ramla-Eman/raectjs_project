@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Footer = () => {
+const Footer = ({ myTheme }) => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer
+      data-theme={myTheme}
+      className="text-[var(--background)] bg-[var(--foreground)] flex items-center justify-center h-[10vh]"
+    >
+      <p>Copyright &copy; 2025</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
